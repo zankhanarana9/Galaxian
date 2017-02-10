@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Galaxian</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Zankhana Rana">
+		<link rel="stylesheet" type="text/css" href="Style.css">
+	</head>
+	<body oncontextmenu="return false">
+		<!-- The canvas for the panning background -->
+		<canvas id="background" width="600" height="360">
+			Your browser does not support canvas. Please try again with a different browser.
+		</canvas>
+		<!-- The canvas for all enemy ships and bullets -->
+		<canvas id="main" width="600" height="360">
+		</canvas>
+		<!-- The canvas the ship uses -->
+		<canvas id="ship" width="600" height="360">
+		</canvas>
+		<div class="level"> LEVEL <span id = "level">1</span>
+		<div class="time"> TIME TAKEN: <span id="times"></span></div>
+		<div class="score">SCORE: <span id="score"></span></div>
+		<div class="game-over" id="game-over">GAME OVER<p><span onclick="game.restart()">Restart</span></p></div>
+		<div class="loading" id="loading">LOADING...<p>Please wait</p></div>
+		<script src="space_shooter.js"></script>
+	</body>
+</html>
